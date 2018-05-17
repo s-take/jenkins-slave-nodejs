@@ -17,7 +17,7 @@ RUN npm install -g gulp-cli
 
 # Install Google Chrome
 ADD ./google-x86_64.repo /etc/yum.repos.d/external.repo
-RUN yum install -y google-chrome-stable gnu-free-sans-fonts && \
+RUN yum install -y google-chrome-stable gnu-free-sans-fonts
 
 # Install Groovy
 RUN cd /opt && \
