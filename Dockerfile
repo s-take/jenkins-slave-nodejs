@@ -46,7 +46,7 @@ RUN yum install -y wget && \
 # Install OWASP Dependency-Check
 ARG DEPENDENCY_CHECK_DOWNLOAD_URL
 RUN cd /opt && \
-    curl -L -o dependency-check.tar.gz ${DEPENDENCY_CHECK_DOWNLOAD_URL}  && \
+    curl -L -o dependency-check.tar.gz https://bintray.com/jeremy-long/owasp/download_file?file_path=dependency-check-3.1.0-release.zip && \
     mkdir temp && \
     unzip dependency-check.tar.gz -d ./temp && \
     DEPENDENCY_CHECK_DIR_NAME=$(ls -1 ./temp) && \
