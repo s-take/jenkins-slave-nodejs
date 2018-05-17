@@ -1,6 +1,6 @@
 FROM openshift/jenkins-slave-base-centos7
 
-USER ROOT
+USER root
 
 ENV NODEJS_VERSION=8 \
     NPM_CONFIG_PREFIX=$HOME/.npm-global \
