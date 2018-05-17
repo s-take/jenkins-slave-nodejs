@@ -1,5 +1,7 @@
 FROM openshift/jenkins-slave-base-centos7
 
+USER ROOT
+
 ENV NODEJS_VERSION=8 \
     NPM_CONFIG_PREFIX=$HOME/.npm-global \
     PATH=$HOME/node_modules/.bin/:$HOME/.npm-global/bin/:$PATH
